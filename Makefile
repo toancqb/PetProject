@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-OBJS = main.o StringProcess.o Operator.o
+OBJS = main.o FileInput.o  StringProcess.o Operator.o
 CFLAG = -Wall -g
 CC = gcc
 INCLUDE = 

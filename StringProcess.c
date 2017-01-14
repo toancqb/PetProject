@@ -10,8 +10,8 @@
 #include <string.h>
 #include "StringProcess.h"
 #include "define.h"
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 void input(_charT **str1, _charT **str2){
 	if(*str1 == NULL && *str2 == NULL){
 		*str1 = (_charT*)calloc(_SIZE_MAX,sizeof(_charT));

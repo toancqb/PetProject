@@ -11,7 +11,7 @@
 #include "StringProcess.h"
 #include "Operator.h"
 #include "define.h"
-
+#include "FileInput.h"
 
 
 void test_MulxONE(){  // func ok: strlength(), Processing, processString
@@ -35,10 +35,11 @@ void test_MUL(){  // func ok: strlength(), Processing, processString, ADDITION, 
 
 void test_ADD(){  // func ok: strlength(), Processing, processString, ADDITION, SUBTRACTION
 	_charT *str1=NULL,*str2=NULL,*str;
-	input(&str1,&str2);
+	//input(&str1,&str2);
+	ReadFile(&str1,&str2,"FileData.txt");
 	
 	str = ADDITION(str1,str2);
-	printf("%s ",str);
+	printf("%s\n",str);
 }
 
 void test_SUB(){  // func ok: strlength(), Processing, processString, ADDITION, SUBTRACTION
@@ -46,11 +47,17 @@ void test_SUB(){  // func ok: strlength(), Processing, processString, ADDITION, 
 	input(&str1,&str2);
 //	str = signString(str1);
 	str = SUBTRACTION(str1,str2);
-	printf("%s ",str);
+	printf("%s\n",str);
 }
 
 
-
+void test_ReadFile(){  // func ok: strlength(), Processing, processString, ADDITION, SUBTRACTION
+	_charT *str1=NULL,*str2=NULL;
+	//input(&str1,&str2);
+	ReadFile(&str1,&str2,"FileData.txt");
+	
+	printf("%s \n\n%s\n",str1,str2);
+}
 
 int main(int argc, _charT *argv[]) {
 	
