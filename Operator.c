@@ -63,7 +63,7 @@ _charT* SUBTRACTION(_charT *str1,_charT *str2){
 	}
 	
 	processString(&str1,&str2);
-	long i,j;
+	long i;
 	int k = 0,temp; // k = 1 || 0
 	assignChar(&str[0],' ');
 	for(i=strMax_length-1;i>=0;i--){
@@ -119,7 +119,7 @@ _charT* MULTIPLICATION(_charT *str1,_charT *str2){
 		str_temp = str1; str1 = str2; str2 = str_temp;
 		long_temp = str1_length; str1_length = str2_length; str2_length = long_temp;
 	}
-	long i,j,k=1;
+	long i,k=1;
 	str_cur = MULTIPLICATION_MulxOne(str1,str2[str2_length-1]);
 	for(i = str2_length-2;i>=0;i--){
 		printf("\n%s",str_cur);

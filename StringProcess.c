@@ -96,6 +96,7 @@ _charT* signString(_charT* str1){
 	long i;
 	for(i=0;i<strlength(str1);i++)	assignChar(&str[i+1],str1[i]);
 	assignChar(&str[0],'-');
+	return str;
 }
 
 int charToINT(_charT c){
