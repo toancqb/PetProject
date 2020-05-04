@@ -122,9 +122,9 @@ _charT* MULTIPLICATION(_charT *str1,_charT *str2){
 	long i,k=1;
 	str_cur = MULTIPLICATION_MulxOne(str1,str2[str2_length-1]);
 	for(i = str2_length-2;i>=0;i--){
-		printf("\n%s",str_cur);
+		//printf("\n%s",str_cur);
 		str_next = processStringMulxNTEN(MULTIPLICATION_MulxOne(str1,str2[i]),k++);
-		printf("	%s\n",str_next);
+		//printf("	%s\n",str_next);
 		str_cur = ADDITION(str_cur,str_next);
 		
 	}

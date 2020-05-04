@@ -11,5 +11,9 @@ main:${OBJS}
 
 clean:
 	-rm -f *.o
+
+fclean:
+	rm -f *.o main
+
 .c.o:
 	${CC} ${CFLAG} ${INCLUDE} -c $<
